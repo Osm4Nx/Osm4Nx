@@ -264,13 +264,16 @@ I enjoy taking an idea from **concept → design → development → deployment*
 
 # 📈 Contribution Activity
 
+My contribution activity is continuously reflected through my GitHub profile and contribution calendar.
+
 <div align="center">
 
-<img
-  src="./profile/contributions.svg"
-  width="100%"
-  alt="Osman's GitHub Contribution Activity"
-/>
+<a href="https://github.com/osm4nx">
+  <img
+    src="https://img.shields.io/badge/View%20Full%20Contribution%20Activity-181717?style=for-the-badge&logo=github&logoColor=white"
+    alt="View GitHub Contribution Activity"
+  />
+</a>
 
 </div>
 
