@@ -216,11 +216,11 @@ I enjoy taking an idea from concept → design → development → deployment an
 
 <div align="center">
 
-<a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=osm4nx&bg_color=0d1117&color=58a6ff&line=1f6feb&point=ffffff&area=true&hide_border=true" width="100%" alt="Osman's Contribution Activity Graph"/>
-
-</a>
+<img
+  src="https://github-readme-activity-graph.vercel.app/graph?username=osm4nx&bg_color=0d1117&color=58a6ff&line=1f6feb&point=ffffff&area=true&hide_border=true"
+  width="100%"
+  alt="Osman's GitHub Contribution Activity Graph"
+/>
 
 </div>
 
@@ -230,43 +230,34 @@ I enjoy taking an idea from concept → design → development → deployment an
 
 <div align="center">
 
-<a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=osm4nx&theme=github-dark-blue&hide_border=true" alt="Osman's GitHub Streak"/>
-
-</a>
+<img
+  src="https://streak-stats.vercel.app/?user=osm4nx&theme=github-dark-blue&hide_border=true"
+  alt="Osman's GitHub Contribution Streak"
+/>
 
 </div>
 
 ---
 
-# 📌 GitHub Overview
+# 📊 GitHub Overview
 
 <div align="center">
 
-<table>
-<tr>
+<a href="https://github.com/osm4nx">
+<img
+  src="https://github-readme-stats.vercel.app/api?username=osm4nx&show_icons=true&hide_border=true&rank_icon=github&theme=github_dark"
+  height="180"
+  alt="Osman's GitHub Statistics"
+/>
+</a>
 
-<td align="center">
-
-<img src="https://img.shields.io/github/repos/osm4nx?style=for-the-badge&logo=github&label=Total%20Repos" alt="Total Repositories"/>
-
-</td>
-
-<td align="center">
-
-<img src="https://img.shields.io/github/stars/osm4nx?affiliations=OWNER&style=for-the-badge&logo=github&label=Stars%20Received" alt="Stars Received"/>
-
-</td>
-
-<td align="center">
-
-<img src="https://img.shields.io/github/followers/osm4nx?style=for-the-badge&logo=github&label=Followers" alt="Followers"/>
-
-</td>
-
-</tr>
-</table>
+<a href="https://github.com/osm4nx">
+<img
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=osm4nx&layout=compact&langs_count=8&hide_border=true&theme=github_dark"
+  height="180"
+  alt="Osman's Most Used Languages"
+/>
+</a>
 
 </div>
 
@@ -276,11 +267,11 @@ I enjoy taking an idea from concept → design → development → deployment an
 
 <div align="center">
 
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-
-<img src="https://github-profile-trophy.vercel.app/?username=osm4nx&theme=darkhub&no-frame=true&no-bg=true&margin-w=10&column=6" width="100%" alt="GitHub Trophies"/>
-
-</a>
+<img
+  src="https://github-profile-trophy-liard-delta.vercel.app/?username=osm4nx&theme=darkhub&no-frame=true&no-bg=true&margin-w=10&column=6"
+  width="100%"
+  alt="Osman's GitHub Trophies"
+/>
 
 </div>
 
