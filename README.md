@@ -4,7 +4,7 @@
 
 ### `Osm4Nx` · Developer · Builder · Founder @ KingByte Studios
 
-I build **web experiences, software products, and games** with a strong focus on modern frontend development, scalable architecture, and polished user experiences.
+Building modern web experiences, software products, and games.
 
 <br />
 
@@ -23,7 +23,10 @@ I build **web experiences, software products, and games** with a strong focus on
 <br />
 <br />
 
-<img src="https://komarev.com/ghpvc/?username=osm4nx&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
+<img
+  src="https://komarev.com/ghpvc/?username=osm4nx&label=Profile%20Views&color=0e75b6&style=for-the-badge"
+  alt="Profile Views"
+/>
 
 </div>
 
@@ -54,7 +57,10 @@ I enjoy taking an idea from **concept → design → development → deployment*
 <div align="center">
 
 <a href="https://kingbytestudios.com/">
-  <img src="https://img.shields.io/badge/KingByte%20Studios-Building%20Digital%20Experiences-111111?style=for-the-badge&logo=google-chrome&logoColor=white" alt="KingByte Studios" />
+  <img
+    src="https://img.shields.io/badge/KingByte%20Studios-Building%20Digital%20Experiences-111111?style=for-the-badge&logo=google-chrome&logoColor=white"
+    alt="KingByte Studios"
+  />
 </a>
 
 <br />
@@ -65,7 +71,10 @@ I enjoy taking an idea from **concept → design → development → deployment*
 <br />
 
 <a href="https://kingbytestudios.com/">
-  <img src="https://img.shields.io/badge/Visit%20Website-111111?style=flat-square&logo=google-chrome&logoColor=white" alt="Visit KingByte Studios" />
+  <img
+    src="https://img.shields.io/badge/Visit%20Website-111111?style=flat-square&logo=google-chrome&logoColor=white"
+    alt="Visit KingByte Studios"
+  />
 </a>
 
 </div>
@@ -74,7 +83,7 @@ I enjoy taking an idea from **concept → design → development → deployment*
 
 # 🧰 Tech Stack
 
-### 💻 Languages
+## 💻 Languages
 
 <p align="left">
 
@@ -114,7 +123,9 @@ I enjoy taking an idea from **concept → design → development → deployment*
 
 </p>
 
-### ⚛️ Frontend & Frameworks
+---
+
+## ⚛️ Frontend & Frameworks
 
 <p align="left">
 
@@ -149,7 +160,9 @@ I enjoy taking an idea from **concept → design → development → deployment*
 
 </p>
 
-### 🗄️ Backend & Databases
+---
+
+## 🗄️ Backend & Databases
 
 <p align="left">
 
@@ -179,7 +192,9 @@ I enjoy taking an idea from **concept → design → development → deployment*
 
 </p>
 
-### 🛠️ Tools & Platforms
+---
+
+## 🛠️ Tools & Platforms
 
 <p align="left">
 
@@ -217,16 +232,16 @@ I enjoy taking an idea from **concept → design → development → deployment*
 
 <a href="https://github.com/osm4nx">
   <img
-    height="180"
-    src="https://github-readme-stats.vercel.app/api?username=osm4nx&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github&theme=github_dark"
+    src="./profile/stats.svg"
+    width="49%"
     alt="Osman's GitHub Statistics"
   />
 </a>
 
 <a href="https://github.com/osm4nx">
   <img
-    height="180"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=osm4nx&layout=compact&langs_count=8&hide_border=true&theme=github_dark"
+    src="./profile/top-langs.svg"
+    width="49%"
     alt="Osman's Top Languages"
   />
 </a>
@@ -238,7 +253,7 @@ I enjoy taking an idea from **concept → design → development → deployment*
 <div align="center">
 
 <img
-  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=osm4nx&theme=github_dark"
+  src="./profile/profile-details.svg"
   width="100%"
   alt="Osman's GitHub Profile Summary"
 />
@@ -252,9 +267,9 @@ I enjoy taking an idea from **concept → design → development → deployment*
 <div align="center">
 
 <img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=osm4nx&bg_color=0d1117&color=58a6ff&line=1f6feb&point=ffffff&area=true&hide_border=true"
+  src="./profile/contributions.svg"
   width="100%"
-  alt="Osman's GitHub Contribution Activity Graph"
+  alt="Osman's GitHub Contribution Activity"
 />
 
 </div>
@@ -290,7 +305,8 @@ I enjoy taking an idea from **concept → design → development → deployment*
 <div align="center">
 
 <img
-  src="https://streak-stats.vercel.app/?user=osm4nx&theme=github-dark-blue&hide_border=true"
+  src="./profile/streak.svg"
+  width="70%"
   alt="Osman's GitHub Contribution Streak"
 />
 
@@ -298,17 +314,20 @@ I enjoy taking an idea from **concept → design → development → deployment*
 
 ---
 
-# 🏆 GitHub Trophies
+# 🏆 GitHub Achievements
 
 <div align="center">
 
-<img
-  src="https://github-profile-trophy.vercel.app/?username=osm4nx&theme=darkhub&no-frame=true&no-bg=true&margin-w=10&column=6"
-  width="100%"
-  alt="Osman's GitHub Trophies"
-/>
+<a href="https://github.com/osm4nx?tab=achievements">
+  <img
+    src="https://img.shields.io/badge/View%20GitHub%20Achievements-181717?style=for-the-badge&logo=github&logoColor=white"
+    alt="GitHub Achievements"
+  />
+</a>
 
 </div>
+
+> GitHub's native profile achievements are displayed directly on the profile and are intentionally linked rather than loaded through an external trophy API.
 
 ---
 
@@ -378,17 +397,28 @@ My focus is on:
 <div align="center">
 
 <a href="https://github.com/osm4nx">
-  <img src="https://img.shields.io/badge/GitHub-osm4nx-181717?style=for-the-badge&logo=github" alt="GitHub"/>
+  <img
+    src="https://img.shields.io/badge/GitHub-osm4nx-181717?style=for-the-badge&logo=github"
+    alt="GitHub"
+  />
 </a>
+
 &nbsp;
 
 <a href="https://kingbytestudios.com/">
-  <img src="https://img.shields.io/badge/Website-KingByte%20Studios-111111?style=for-the-badge&logo=google-chrome&logoColor=white" alt="KingByte Studios"/>
+  <img
+    src="https://img.shields.io/badge/Website-KingByte%20Studios-111111?style=for-the-badge&logo=google-chrome&logoColor=white"
+    alt="KingByte Studios"
+  />
 </a>
+
 &nbsp;
 
 <a href="https://www.instagram.com/osmn.x_/">
-  <img src="https://img.shields.io/badge/Instagram-osmn.x_-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+  <img
+    src="https://img.shields.io/badge/Instagram-osmn.x_-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+    alt="Instagram"
+  />
 </a>
 
 </div>
