@@ -7,6 +7,8 @@ on:
   workflow_dispatch:
 
   push:
+    branches:
+      - main
     paths:
       - ".github/workflows/profile-summary.yml"
 
@@ -18,33 +20,47 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  generate:
-    name: Generate Profile Summary
+  build:
+    name: Generate Profile Summary Cards
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate profile summary cards
+      - name: Generate GitHub Profile Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
           BRANCH_NAME: main
           UTC_OFFSET: 3
+          EXCLUDE: ""
+          AUTO_PUSH: false
+          THEME: github_dark
+          ANIMATION: ""
+          DURATION: ""
+          NAME: ""
 
-      - name: Prepare profile details card
+      - name: Prepare profile directory
         run: |
           mkdir -p profile
 
-          cp profile-summary-card-output/github_dark/3-profile-details.svg \
-             profile/profile-details.svg
+      - name: Copy profile details card
+        run: |
+          test -s profile-summary-card-output/github_dark/3-profile-details.svg
 
-      - name: Verify generated profile card
+          cp \
+            profile-summary-card-output/github_dark/3-profile-details.svg \
+            profile/profile-details.svg
+
+      - name: Verify generated SVG
         run: |
           test -s profile/profile-details.svg
+
+          echo "Profile summary card generated successfully."
+          ls -lh profile/profile-details.svg
 
       - name: Commit generated card
         run: |
@@ -58,5 +74,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore: update profile summary"
+          git commit -m "chore: update profile summary card"
           git push
