@@ -6,12 +6,6 @@ on:
 
   workflow_dispatch:
 
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/profile-summary.yml"
-
 permissions:
   contents: write
 
@@ -28,7 +22,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate GitHub Profile Summary Cards
+      - name: Generate Profile Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
@@ -37,32 +31,79 @@ jobs:
           BRANCH_NAME: main
           UTC_OFFSET: 3
           EXCLUDE: ""
-          AUTO_PUSH: false
+          AUTO_PUSH: true
           THEME: github_dark
           ANIMATION: ""
           DURATION: ""
           NAME: ""
 
-      - name: Prepare profile directory
+      - name: Show generated files
+        run: |
+          echo "======================================"
+          echo "Generated files:"
+          echo "======================================"
+
+          if [ -d "profile-summary-card-output" ]; then
+            find profile-summary-card-output -type f -print
+          else
+            echo "ERROR: profile-summary-card-output directory does not exist."
+            exit 1
+          fi
+
+      - name: Verify Profile Details Card
+        run: |
+          echo "Searching for profile details SVG..."
+
+          PROFILE_DETAILS=$(find profile-summary-card-output \
+            -type f \
+            -name "3-profile-details.svg" \
+            -print \
+            -quit)
+
+          if [ -z "$PROFILE_DETAILS" ]; then
+            echo "ERROR: 3-profile-details.svg was not generated."
+            echo ""
+            echo "Available files:"
+            find profile-summary-card-output -type f -print
+            exit 1
+          fi
+
+          echo "Found:"
+          echo "$PROFILE_DETAILS"
+
+          test -s "$PROFILE_DETAILS"
+
+      - name: Copy Profile Details Card
         run: |
           mkdir -p profile
 
-      - name: Copy profile details card
-        run: |
-          test -s profile-summary-card-output/github_dark/3-profile-details.svg
+          PROFILE_DETAILS=$(find profile-summary-card-output \
+            -type f \
+            -name "3-profile-details.svg" \
+            -print \
+            -quit)
 
-          cp \
-            profile-summary-card-output/github_dark/3-profile-details.svg \
-            profile/profile-details.svg
+          if [ -z "$PROFILE_DETAILS" ]; then
+            echo "ERROR: Profile details card not found."
+            exit 1
+          fi
 
-      - name: Verify generated SVG
+          cp "$PROFILE_DETAILS" profile/profile-details.svg
+
+      - name: Verify Final SVG
         run: |
+          echo "Checking final SVG..."
+
           test -s profile/profile-details.svg
 
-          echo "Profile summary card generated successfully."
+          echo ""
+          echo "======================================"
+          echo "Profile details generated successfully"
+          echo "======================================"
+
           ls -lh profile/profile-details.svg
 
-      - name: Commit generated card
+      - name: Commit Profile Details
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
