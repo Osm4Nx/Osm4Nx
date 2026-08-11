@@ -1,0 +1,62 @@
+name: Update Profile Summary Cards
+
+on:
+  schedule:
+    - cron: "37 0 * * *"
+
+  workflow_dispatch:
+
+  push:
+    paths:
+      - ".github/workflows/profile-summary.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-summary
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    name: Generate Profile Summary
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: main
+          UTC_OFFSET: 3
+
+      - name: Prepare profile details card
+        run: |
+          mkdir -p profile
+
+          cp profile-summary-card-output/github_dark/3-profile-details.svg \
+             profile/profile-details.svg
+
+      - name: Verify generated profile card
+        run: |
+          test -s profile/profile-details.svg
+
+      - name: Commit generated card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/profile-details.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes detected."
+            exit 0
+          fi
+
+          git commit -m "chore: update profile summary"
+          git push
